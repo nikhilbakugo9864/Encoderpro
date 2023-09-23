@@ -29,6 +29,11 @@ from bot import (
     watermark,
     pid_list
 )
+from bot.helper_funcs.ffmpeg import (
+  media_info,
+  take_screen_shot,
+  get_width_height
+)
 
 async def convert_video(video_file, output_directory, total_time, bot, message, chan_msg):
     # https://stackoverflow.com/a/13891070/4723940
